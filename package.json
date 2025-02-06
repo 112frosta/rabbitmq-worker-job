@@ -3,9 +3,10 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir dist --target=bun",
-    "start": "bun run dist/index.js"
+    "dev:server": "bun run --watch src/server/index.ts",
+    "build:server": "bun build src/server/index.ts --outdir dist --target=bun",
+    "start:server": "bun run dist/server/index.js",
+    "dev:client": "bun run --watch src/client/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
